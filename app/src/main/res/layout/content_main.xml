@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    tools:context="com.zaharang.mylgremote.MainActivity">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="POWER ON"
+        android:id="@+id/button_pwr_on"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onClickButton" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Power Off"
+        android:id="@+id/button_pwr_off"
+        android:layout_alignBottom="@+id/button_pwr_on"
+        android:layout_alignParentEnd="true"
+        android:onClick="onClickButton" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Channel Up"
+        android:id="@+id/button_ch_up"
+        android:layout_marginTop="49dp"
+        android:layout_below="@+id/button_pwr_on"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClickButton" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="channel down"
+        android:id="@+id/button_ch_down"
+        android:layout_below="@+id/button_ch_up"
+        android:layout_alignStart="@+id/button_ch_up"
+        android:onClick="onClickButton" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VOL DOWN"
+        android:id="@+id/button_vol_down"
+        android:layout_below="@+id/button_ch_down"
+        android:layout_toStartOf="@+id/button_ch_down"
+        android:onClick="onClickButton" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VOL UP"
+        android:id="@+id/button_vol_up"
+        android:layout_alignBottom="@+id/button_vol_down"
+        android:layout_alignParentEnd="true"
+        android:onClick="onClickButton" />
+</RelativeLayout>
