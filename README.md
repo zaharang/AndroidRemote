@@ -9,6 +9,9 @@ Just for controlling LG TV devices, but you can easily add any IrDA hex code whi
 
 ## Reference
  * http://stackoverflow.com/questions/20244337/consumerirmanager-api-19
+ * Remote Hex code
+	https://www.remotecentral.com/cgi-bin/mboard/rc-discrete/thread.cgi?7244
+	http://www.remotecentral.com/cgi-bin/mboard/rc-discrete/thread.cgi?5605
 
 ## License
  * None
